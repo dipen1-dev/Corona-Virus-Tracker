@@ -1,11 +1,15 @@
 package com.example.coronacasestracker.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LocationStats {
 
         private String location;
         private String last_updated_date;
-        private int total_cases;
         private int new_cases;
+
+
 
     public String getLocation() {
         return location;
@@ -23,13 +27,6 @@ public class LocationStats {
         this.last_updated_date = last_updated_date;
     }
 
-    public int getTotal_cases() {
-        return total_cases;
-    }
-
-    public void setTotal_cases(int total_cases) {
-        this.total_cases = total_cases;
-    }
 
     public int getNew_cases() {
         return new_cases;
@@ -44,7 +41,6 @@ public class LocationStats {
             return "LocationStats{" +
                     "location=" + location+ '\'' +
                     ", last_updated_date='" + last_updated_date + '\'' +
-                    ", total_cases=" + total_cases + '\''+
                     ",new_cases=" +new_cases +
                     '}';
         }
